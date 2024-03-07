@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block header %}
+  <h1>{% block title %}Fighters{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% for fighter in fighters %}
+    <article class="tag-list">
+        <div class="tag-list-info">
+            <div class="tag-list-title">
+              <h1>{{ fighter['name'] }}</h1>
+            </div>
+            </div>
+        <a class="button big" href="">Select</a>
+    </article>
+  {% endfor %}
+{% endblock %}

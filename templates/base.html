@@ -1,0 +1,21 @@
+<meta
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self';
+        script-src 'self' www.google-analytics.com www.googletagmanager.com;
+        img-src www.googletagmanager.com;
+        connect-src 'self' www.google-analytics.com www.googletagmanager.com;
+"
+>
+<!doctype html>
+<title>{% block title %}{% endblock %} - videobookmarks</title>
+<link href="{{ url_for('static', path='/style.css') }}" rel="stylesheet">
+
+  <nav>
+    <a href="/" class="home">MMA Stats</a>
+  </nav>
+<header>
+  {% block header %}{% endblock %}
+</header>
+<section class="content">
+  {% block content %}{% endblock %}
+</section>
